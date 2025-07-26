@@ -53,15 +53,20 @@ document.getElementById("signupForm").addEventListener("submit", async function(
         });
 
         const result = await response.json();
+        const errorElement = document.getElementById("signupError");
 
         if (response.ok) {
             localStorage.setItem("access_token", result.access_token);
             window.location.href = "dashboard.html"; 
         } else {
-            document.getElementById("signupError").textContent = result.detail || "Login failed";
+            errorElement.textContent = result.detail || "Login failed";
+            errorElement.classList.add("show");
         }
     } catch (err) {
-        document.getElementById("signupError").textContent = "An error occurred. Please try again.";
+        const errorElement = document.getElementById("signupError");
+        errorElement.textContent = "An error occurred. Please try again.";
+        errorElement.classList.add("show");
     }
 });
+
 
