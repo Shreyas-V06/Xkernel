@@ -16,3 +16,8 @@ class UserPublic(BaseModel):
 
 class UserPrivate(UserPublic):
     hashed_password: str
+
+class RegisterInput(BaseModel):
+    username: str
+    email: str
+    password: str   

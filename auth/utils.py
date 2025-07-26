@@ -89,16 +89,20 @@ async def read_users_me(current_user: UserPublic = Depends(get_current_active_us
     return current_user
 
 
-@auth_router.get("/users/me/uid", response_model=str)
+@auth_router.get("/users/me/email", response_model=str)
 def get_user_id(current_user:UserPublic=Depends(read_users_me)):
     username=current_user.username
     user=dict(collection.find_one({"username":username}))
-    user_id=user['_id']
-    return user_id
+    user_email=user['email']
+    return user_email
 
 @auth_router.post("/register")
-async def register(username:str,password:str,email:str):
-    hashed_password=get_password_hash(password)
-    details={'username':username,'hashed_password':hashed_password,'email':email}
+async def register(data: RegisterInput):
+    hashed_password = get_password_hash(data.password)
+    details = {
+        'username': data.username,
+        'hashed_password': hashed_password,
+        'email': data.email
+    }
     collection.insert_one(details)
-    return {"Response":"Succesful"}
+    return {"Response": "Successful"}
