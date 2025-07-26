@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">DreamShip</h1>
+            <div class="user-section">
+                <span class="user-email"></span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+  
+    <main class="main-content">
+      
+        <div class="welcome-section">
+            <h2 class="welcome-title">Welcome back!</h2>
+            <p class="welcome-subtitle">Ready to capture your dreams?</p>
+        </div>
+
+
+        <div class="quick-actions">
+            <button class="add-dream-btn">+ Add New Dream</button>
+        </div>
+
+
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">📖</span>
+                    <h3 class="stat-title">Total Dreams</h3>
+                </div>
+                <p class="stat-number">47</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">📅</span>
+                    <h3 class="stat-title">This Month</h3>
+                </div>
+                <p class="stat-number">12</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-header">
+                    <span class="stat-icon">⭐</span>
+                    <h3 class="stat-title">Lucid Dreams</h3>
+                </div>
+                <p class="stat-number">8</p>
+            </div>
+        </div>
+
+
+        <div class="recent-dreams">
+            <div class="recent-dreams-header">
+                <h3 class="recent-dreams-title">Recent Dreams</h3>
+            </div>
+            <div class="recent-dreams-content">
+                <div class="dreams-list">
+ 
+                    <div class="dream-entry">
+                        <div class="dream-header">
+                            <h4 class="dream-title">Flying Over Mountains</h4>
+                            <span class="dream-date">2 days ago</span>
+                        </div>
+                        <p class="dream-description">
+                            I was soaring above snow-capped mountains with incredible clarity...
+                        </p>
+                        <div class="dream-tags">
+                            <span class="tag tag-lucid">Lucid</span>
+                            <span class="tag tag-normal">Adventure</span>
+                        </div>
+                    </div>
+
+                    <div class="dream-entry">
+                        <div class="dream-header">
+                            <h4 class="dream-title">Childhood Home</h4>
+                            <span class="dream-date">5 days ago</span>
+                        </div>
+                        <p class="dream-description">
+                            Revisited my old house with my family, everything was exactly as I remembered...
+                        </p>
+                        <div class="dream-tags">
+                            <span class="tag tag-normal">Memory</span>
+                            <span class="tag tag-normal">Family</span>
+                        </div>
+                    </div>
+
+                    <div class="dream-entry">
+                        <div class="dream-header">
+                            <h4 class="dream-title">Ocean Adventure</h4>
+                            <span class="dream-date">1 week ago</span>
+                        </div>
+                        <p class="dream-description">
+                            Swimming with dolphins in crystal clear water, could breathe underwater...
+                        </p>
+                        <div class="dream-tags">
+                            <span class="tag tag-normal">Nature</span>
+                            <span class="tag tag-normal">Water</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all">
+                    <button class="view-all-btn">View All Dreams →</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
