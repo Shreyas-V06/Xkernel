@@ -27,9 +27,11 @@ async function handleSignup() {
             window.location.href = "login.html";
         } else {
             document.getElementById("signupError").textContent = result.detail || "Registration failed";
+            document.getElementById("signupError").classList.add("show");
         }
     } catch (err) {
         document.getElementById("signupError").textContent = "An error occurred. Please try again.";
+        document.getElementById("signupError").classList.add("show");
     }
 }
 
