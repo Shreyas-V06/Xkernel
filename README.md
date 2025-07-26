@@ -1,6 +1,6 @@
 # 🌌 Dreamship
 
-![Watch video](/images/page.png)(https://www.youtube.com/watch?v=m7veR2Kn5YU)
+[![Watch video](images/page.png)](https://www.youtube.com/watch?v=m7veR2Kn5YU)
 ▶️ Click the thumbnail above to watch the video.
 
 
