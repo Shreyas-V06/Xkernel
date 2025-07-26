@@ -1,6 +1,7 @@
 # 🌌 Dreamship
 
-Dreamship is a sleek, secure, and extendable authentication system built with FastAPI. It demonstrates modern backend practices with JWT-based authentication, password hashing, and MongoDB integration — all packaged in a clean and modular structure.
+![alt text](/images/page.png)
+Dreamship is a Dream Jorunaling app. It has a sleek, secure, and extendable authentication system built with FastAPI. It demonstrates modern backend practices with JWT-based authentication, password hashing, and MongoDB integration.
 
 ---
 
@@ -15,6 +16,7 @@ Dreamship is a sleek, secure, and extendable authentication system built with Fa
 - All user data (username, password, email, etc.) is stored in MongoDB.
 - MongoDB collection used to persist login credentials and associated information.
 - Queries to fetch user profiles securely from the database.
+![alt text](/images/mongodb.png)
 
 ### ✅ Password Hashing  
 - User passwords are never stored in plain text.
