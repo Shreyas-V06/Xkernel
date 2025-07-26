@@ -97,8 +97,8 @@ def get_user_id(current_user:UserPublic=Depends(read_users_me)):
     return user_id
 
 @auth_router.post("/register")
-async def register(username:str,password:str):
+async def register(username:str,password:str,email:str):
     hashed_password=get_password_hash(password)
-    details={'username':username,'hashed_password':hashed_password}
+    details={'username':username,'hashed_password':hashed_password,'email':email}
     collection.insert_one(details)
     return {"Response":"Succesful"}
