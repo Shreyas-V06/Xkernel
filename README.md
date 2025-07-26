@@ -1,13 +1,11 @@
 # 🌌 Dreamship
 
-![alt text](/images/page.png)
+![Watch video](/images/page.png)(https://www.youtube.com/watch?v=m7veR2Kn5YU)
+▶️ Click the thumbnail above to watch the video.
+
+
 Dreamship is a Dream Jorunaling app. It has a sleek, secure, and extendable authentication system built with FastAPI. It demonstrates modern backend practices with JWT-based authentication, password hashing, and MongoDB integration.
 
-## 🎬 Demo Video
-
-[![Watch the demo](https://img.youtube.com/vi/m7veR2Kn5YU/0.jpg)](https://www.youtube.com/watch?v=m7veR2Kn5YU)
-
-▶️ Click the thumbnail above to watch the video.
 
 
 ---
